@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks | Landing Page</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+    <link rel="preload" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+
+      <header id="nav-container">
+        <a href="#">
+          <img src="img/logo.png" class="logo" alt="Logo" />
+        </a>
+
+        <nav id="nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/new.html">What's New</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="textBox">
+          <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            ex animi non fuga aut obcaecati, optio cupiditate voluptatibus
+            dolores consectetur sint itaque?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+          <img src="img/img1.png" alt="Image1" class="starbucks" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            src="img/thumb1.png"
+            alt="Thumb 1"
+            onclick="imgSlider('./img/img1.png'); changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb2.png"
+            alt="Thumb 1"
+            onclick="imgSlider('./img/img2.png'); changeCircleColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb3.png"
+            alt="Thumb 1"
+            onclick="imgSlider('./img/img3.png'); changeCircleColor('#d752b1')"
+          />
+        </li>
+      </ul>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="js/app.js"></script>
+    <script src="js/active.js"></script>
+  </body>
+</html>
